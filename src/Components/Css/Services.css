@@ -1,0 +1,73 @@
+.services-page{
+    background:white;
+    padding:80px 0;
+}
+
+
+.services-page h1{
+    color:#e91e63;
+    font-weight:700;
+    font-size:40px;
+}
+
+
+.service-text{
+    color:#666;
+    max-width:700px;
+    margin:auto;
+}
+
+
+.service-card{
+    background:#e91e63;
+    padding:35px 25px;
+    border-radius:20px;
+    text-align:center;
+    height:100%;
+    transition:0.3s;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+.service-card:hover{
+    transform:translateY(-10px);
+}
+
+
+.service-card h4{
+    color:white;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+
+.service-card p{
+    color:white;
+    line-height:1.7;
+}
+
+
+.service-btn{
+    background:white;
+    color:#e91e63;
+    border:none;
+    padding:10px 30px;
+    border-radius:25px;
+    margin-top:15px;
+    font-weight:600;
+}
+
+
+.service-btn:hover{
+    background:#c2185b;
+    color:white;
+}
+
+
+@media(max-width:768px){
+
+    .services-page h1{
+        font-size:32px;
+    }
+
+}

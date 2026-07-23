@@ -1,0 +1,66 @@
+.review-section{
+    padding:80px 0;
+    background:white;
+}
+
+
+.review-section h2{
+    font-size:40px;
+    font-weight:700;
+    color:#333;
+}
+
+
+.review-section h2 span{
+    color:#e91e63;
+}
+
+
+.review-text{
+    color:#666;
+}
+
+
+.review-card{
+    background:#e91e63;
+    color:white;
+    padding:35px 25px;
+    border-radius:20px;
+    text-align:center;
+    height:100%;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+
+.review-card:hover{
+    transform:translateY(-10px);
+}
+
+
+.stars{
+    color:#fff;
+    font-size:25px;
+    margin-bottom:20px;
+}
+
+
+.review-card p{
+    line-height:1.7;
+    font-size:16px;
+}
+
+
+.review-card h5{
+    margin-top:20px;
+    font-weight:700;
+}
+
+
+@media(max-width:768px){
+
+    .review-section h2{
+        font-size:32px;
+    }
+
+}
