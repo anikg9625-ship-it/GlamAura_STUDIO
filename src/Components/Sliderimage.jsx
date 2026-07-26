@@ -5,90 +5,80 @@ import Slider3 from '../assets/Images/Solider3.avif'
 
 const Sliderimage = () => {
   return (
-    <>
-      <div className="container p-2 p-md-3 mt-4 mt-md-5 mb-4">
+    <div className="container mt-5 mb-4">
 
-        <h3 
-          className="text-center fw-bold mb-3 mb-md-4"
-          style={{color:"#c2185b"}}
-        >
-          Our Beauty Products
-        </h3>
+      <h3 
+        className="text-center fw-bold mb-4"
+        style={{
+          color:"#c2185b",
+          letterSpacing:"1px"
+        }}
+      >
+        Our Beauty Products
+      </h3>
 
-        <div 
-          id="carouselExampleAutoplaying" 
-          className="carousel slide carousel-fade shadow-lg rounded-4 overflow-hidden"
-          data-bs-ride="carousel"
-        >
+      <div 
+        id="carouselExampleAutoplaying" 
+        className="carousel slide carousel-fade shadow-lg rounded-4 overflow-hidden"
+        data-bs-ride="carousel"
+        data-bs-interval="2500"
+      >
 
-          <div className="carousel-inner">
+        <div className="carousel-inner">
 
-            <div className="carousel-item active">
-              <img 
-                src={Slider1} 
-                className="d-block w-100"
-                style={{
-                  height: "60vh",
-                  minHeight: "300px",
-                  maxHeight: "500px",
-                  objectFit: "cover"
-                }}
-                alt="Slide 1" 
-              />
+          {[Slider1, Slider2, Slider3].map((img, index) => (
+            <div className={`carousel-item ${index === 0 ? "active" : ""}`} key={index}>
+              <div className="position-relative">
+
+                <img 
+                  src={img} 
+                  className="d-block w-100"
+                  style={{
+                    height: "65vh",
+                    minHeight: "320px",
+                    maxHeight: "520px",
+                    objectFit: "cover",
+                    objectPosition: "center"
+                  }}
+                  alt="slide"
+                />
+
+                <div 
+                  className="position-absolute w-100 h-100"
+                  style={{
+                    top:0,
+                    left:0,
+                    background:"linear-gradient(to top, rgba(0,0,0,0.4), transparent)"
+                  }}
+                ></div>
+
+              </div>
             </div>
-
-            <div className="carousel-item">
-              <img 
-                src={Slider2} 
-                className="d-block w-100"
-                style={{
-                  height: "60vh",
-                  minHeight: "300px",
-                  maxHeight: "500px",
-                  objectFit: "cover"
-                }}
-                alt="Slide 2" 
-              />
-            </div>
-
-            <div className="carousel-item">
-              <img 
-                src={Slider3} 
-                className="d-block w-100"
-                style={{
-                  height: "60vh",
-                  minHeight: "300px",
-                  maxHeight: "500px",
-                  objectFit: "cover"
-                }}
-                alt="Slide 3" 
-              />
-            </div>
-
-          </div>
-
-          <button 
-            className="carousel-control-prev" 
-            type="button" 
-            data-bs-target="#carouselExampleAutoplaying" 
-            data-bs-slide="prev"
-          >
-            <span className="carousel-control-prev-icon"></span>
-          </button>
-
-          <button 
-            className="carousel-control-next" 
-            type="button" 
-            data-bs-target="#carouselExampleAutoplaying" 
-            data-bs-slide="next"
-          >
-            <span className="carousel-control-next-icon"></span>
-          </button>
+          ))}
 
         </div>
 
+        <button 
+          className="carousel-control-prev" 
+          type="button" 
+          data-bs-target="#carouselExampleAutoplaying" 
+          data-bs-slide="prev"
+        >
+          <span className="carousel-control-prev-icon"></span>
+        </button>
+
+        <button 
+          className="carousel-control-next" 
+          type="button" 
+          data-bs-target="#carouselExampleAutoplaying" 
+          data-bs-slide="next"
+        >
+          <span className="carousel-control-next-icon"></span>
+        </button>
+
       </div>
-    </>
+
+    </div>
   )
 }
 

@@ -1,7 +1,8 @@
 import React from 'react'
-import Video from '../assets/Home_Page2.mp4';
-import "./Css/Videosection.css";
-import { Link } from 'react-router-dom';
+import Video from '../assets/Home_Page2.mp4'
+import "./Css/Videosection.css"
+import { Link } from 'react-router-dom'
+
 const Videosection = () => {
   return (
     <section className="video-section">
@@ -19,30 +20,26 @@ const Videosection = () => {
 
         <div className="video-overlay"></div>
 
-
         <div className="video-text">
 
           <span className="small-text">
-            GlamAura STUDIO Makeup Studio
+            GlamAura Studio
           </span>
 
           <h1>
-             Where Beauty Meets Perfection
+            Where Beauty Meets Perfection
           </h1>
 
           <p>
-            Step into a world of luxury makeup services designed to make you shine.
-            We create looks that match your style, personality, and special moments.
+            Luxury makeup that enhances your natural glow and makes every moment unforgettable.
           </p>
 
-        <Link to="services">
-          <button 
-            type="button"
-            className="btn explore-btn"
-          >
-            Explore Services
-          </button>
-</Link>
+          <Link to="/services">
+            <button className="explore-btn">
+              Explore Services
+            </button>
+          </Link>
+
         </div>
 
       </div>
