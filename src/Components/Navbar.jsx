@@ -3,6 +3,14 @@ import "./Css/Navbar.css";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+
+  const closeMenu = () => {
+    const menu = document.getElementById("navbarMenu");
+    if (menu.classList.contains("show")) {
+      menu.classList.remove("show");
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg custom-navbar py-3 fixed-top">
 
@@ -26,25 +34,25 @@ const Navbar = () => {
           <ul className="navbar-nav ms-auto align-items-lg-center gap-lg-4 text-center">
 
             <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
+              <Link className="nav-link" to="/" onClick={closeMenu}>Home</Link>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/services">Services</Link>
+              <Link className="nav-link" to="/services" onClick={closeMenu}>Services</Link>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/about">About</Link>
+              <Link className="nav-link" to="/about" onClick={closeMenu}>About</Link>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
+              <Link className="nav-link" to="/contact" onClick={closeMenu}>Contact</Link>
             </li>
 
           </ul>
 
           <div className="ms-lg-4 text-center mt-3 mt-lg-0">
-            <a href="tel:+919870482604" className="book-btn">
+            <a href="tel:+919870482604" className="book-btn" onClick={closeMenu}>
               Call Now
             </a>
           </div>
