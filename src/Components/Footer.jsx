@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaInstagram } from "react-icons/fa";
 import "./Css/Footer.css";
 
 const Footer = () => {
@@ -29,6 +30,16 @@ const Footer = () => {
                 beauty, creativity, and confidence. Our expert artists create
                 stunning looks for every special occasion.
               </p>
+
+              <a
+                href="https://www.instagram.com/sparklewithkavi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="insta-btn"
+              >
+                <FaInstagram className="insta-icon" /> @sparklewithkavi
+              </a>
+
             </div>
 
 
@@ -36,21 +47,10 @@ const Footer = () => {
               <h5>Quick Links</h5>
 
               <ul>
-                <li>
-                  <Link to="/" onClick={scrollToTop}>Home</Link>
-                </li>
-
-                <li>
-                  <Link to="/services" onClick={scrollToTop}>Services</Link>
-                </li>
-
-                <li>
-                  <Link to="/about" onClick={scrollToTop}>About Us</Link>
-                </li>
-
-                <li>
-                  <Link to="/contact" onClick={scrollToTop}>Contact</Link>
-                </li>
+                <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
+                <li><Link to="/services" onClick={scrollToTop}>Services</Link></li>
+                <li><Link to="/about" onClick={scrollToTop}>About Us</Link></li>
+                <li><Link to="/contact" onClick={scrollToTop}>Contact</Link></li>
               </ul>
             </div>
 
@@ -71,9 +71,10 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6 col-12">
               <h5>Contact Us</h5>
 
-              <p>📍 Delhi, India</p>
+              <p>📍 C-44, Govindpuram Ghaziabad, UP, India</p>
               <p>📞 +91 9870482604</p>
               <p>✉ kavitasingh987048@gmail.com</p>
+
             </div>
 
           </div>
