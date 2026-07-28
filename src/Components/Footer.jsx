@@ -3,6 +3,14 @@ import { Link } from "react-router-dom";
 import "./Css/Footer.css";
 
 const Footer = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
     <>
       <footer className="footer-section">
@@ -29,19 +37,19 @@ const Footer = () => {
 
               <ul>
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/" onClick={scrollToTop}>Home</Link>
                 </li>
 
                 <li>
-                  <Link to="/services">Services</Link>
+                  <Link to="/services" onClick={scrollToTop}>Services</Link>
                 </li>
 
                 <li>
-                  <Link to="/about">About Us</Link>
+                  <Link to="/about" onClick={scrollToTop}>About Us</Link>
                 </li>
 
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <Link to="/contact" onClick={scrollToTop}>Contact</Link>
                 </li>
               </ul>
             </div>
@@ -63,32 +71,18 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6 col-12">
               <h5>Contact Us</h5>
 
-              <p>
-                📍 Delhi, India
-              </p>
-
-              <p>
-                📞 +91 9870482604
-              </p>
-
-              <p>
-                ✉  kavitasingh987048@gmail.com
-              </p>
-
+              <p>📍 Delhi, India</p>
+              <p>📞 +91 9870482604</p>
+              <p>✉ kavitasingh987048@gmail.com</p>
             </div>
 
           </div>
 
-
           <hr />
 
-
           <div className="footer-bottom text-center">
-            <p>
-              © 2026 GlamAura STUDIO. All Rights Reserved.
-            </p>
+            <p>© 2026 GlamAura STUDIO. All Rights Reserved.</p>
           </div>
-
 
         </div>
 
