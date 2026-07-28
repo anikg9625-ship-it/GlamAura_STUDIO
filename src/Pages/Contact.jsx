@@ -39,9 +39,7 @@ const Contact = () => {
                   ✉ kavitasingh987048@gmail.com
                 </p>
 
-                <p>
-                  🕒 Mon - Sun : 10:00 AM - 8:00 PM
-                </p>
+               
 
               </div>
 
