@@ -28,15 +28,15 @@ const Contact = () => {
                 <h3>GlamAura STUDIO</h3>
 
                 <p>
-                  📍 Delhi, India
+                  📍 C-44, Govindpuram Ghaziabad, UP, India
                 </p>
 
                 <p>
-                  📞 +91 98765 43210
+                  📞 +91 9870482604
                 </p>
 
                 <p>
-                  ✉ glamaurastudio@gmail.com
+                  ✉ kavitasingh987048@gmail.com
                 </p>
 
                 <p>

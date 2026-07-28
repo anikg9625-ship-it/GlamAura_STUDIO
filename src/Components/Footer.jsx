@@ -72,7 +72,7 @@ const Footer = () => {
               </p>
 
               <p>
-                ✉ glamaurastudio@gmail.com
+                ✉  kavitasingh987048@gmail.com
               </p>
 
             </div>
