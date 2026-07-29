@@ -1,5 +1,6 @@
 import React from 'react'
 import "../Components/Css/Contact.css"
+import { FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
 return ( <section className="contact-section"> <div className="container">
@@ -22,6 +23,17 @@ return ( <section className="contact-section"> <div className="container">
           <p>📍 C-44, Govindpuram Ghaziabad, UP, India</p>
           <p>📞 +91 9870482604</p>
           <p>✉ kavitasingh987048@gmail.com</p>
+          <p>
+             <a
+                            href="https://www.instagram.com/sparklewithkavi/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="insta-btn"
+                          >
+                            <FaInstagram className="insta-icon" /> @sparklewithkavi
+                          </a>
+            
+          </p>
         </div>
       </div>
 
